@@ -1,0 +1,31 @@
+div{
+    border: 3px solid navy;
+    border-radius: 20%;
+    background-color: blue;
+    width: 10em;
+    text-align: center;
+    color: white;
+}
+
+div:hover{
+    border: 5px solid blue;
+    border-radius: 30%;
+    background-color: lightsalmon;
+    width: 10em;
+    text-align: center;
+    color: blue;
+}
+
+div ul{
+    display: none;
+    list-style: none;
+}
+
+div:hover ul{
+    display: block;
+}
+
+div ul li:hover{
+    background-color: lightgreen;
+    border-bottom-right-radius: 50%;
+}

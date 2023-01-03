@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5.11</title>
+    <style type="text/css">
+        #estacion
+        {
+            position: relative;
+            margin: 0 auto;
+        }
+        #estacion img
+        {
+            position: absolute;
+            left: 0;
+        }
+        #estacion:hover .estaciones
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear;
+            transition: opacity 3s linear;
+        }
+        #estacion:hover .primavera
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 3s;
+            transition: opacity 3s linear 3s;
+        }
+        #estacion:hover .verano
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 6s;
+            transition: opacity 3s linear 6s;
+        }
+        #estacion:hover .otono
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 9s;
+            transition: opacity 3s linear 9s;
+        }
+        #estacion:hover .invierno
+        {
+            opacity: 0;
+            -webkit-transition: opacity 3s linear 12s;
+            transition: opacity 3s linear 12s;
+        }
+    </style>
+    <input type = "button" onclick = "history.back()" name = "Menú" value="Menú">
+</head>
+
+<body>
+   <hr>
+        
+    <div id="estacion">
+        <img class="invierno" src="imagenes/invierno.png" width="291" height="189" 
+            alt="Imagen de invierno">
+        <img class="otono" src="imagenes/otono.png" width="291" height="189"
+            alt="imagen de otono">
+        <img class="verano" src="imagenes/verano.png" width="291" height="189"
+            alt="imagen de verano">
+        <img class="primavera" src="imagenes/primavera.png" width="291" height="189"
+            alt="imagen de primavera">
+        <img class="estaciones" src="imagenes/estaciones.jpg" width="291" height="189"
+            alt="imagen de primavera">
+    </div>
+    
+</body>
+</html>

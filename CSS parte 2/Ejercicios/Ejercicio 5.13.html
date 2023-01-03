@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 5.13</title>
+        <style type="text/css">
+            .flexbox {
+                width: 600px;
+                height: 420px;
+                display: -webkit-box;
+                display: box;
+                -webkit-box-orient: vertical;
+                box-orient: vertical;
+            }
+            .flexbox > div{
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 500px;
+                height: 220px;
+                margin: 10px 10px -30px 0px;
+                padding: 20px 20px 20px 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+            .flexbox > div:nth-child(1){background-color: lightblue;}
+            .flexbox > div:nth-child(2){background-color: lightblue;}
+            .flexbox > div:nth-child(3){background-color: lightblue;}
+            .flexbox > div:nth-child(4){background-color: lightblue;}
+
+            .flexbox > div:hover {
+                width: 500px; height: 200; color: white; font-weight: bold; }
+            .flexbox > div:nth-child(1):hover{background-color: red;}
+            .flexbox > div:nth-child(2):hover{background-color: green;}
+            .flexbox > div:nth-child(3):hover{background-color: yellow;}
+            .flexbox > div:nth-child(4):hover{background-color: blue;}
+
+            p {height: 250px; overflow: hidden; font-family: "Rosario";}
+        </style>
+    </head>
+    <body>
+        <hr>
+                
+        <div class="flexbox">
+            <div><img src="imagenes/primavera.png" alt="primavera" width="100" height="100">
+                <p>
+                    Estación del año comprendida entre el invierno y el verano; en el hemisferio norte, 
+                    se sitúa aproximadamente entre el 21 de marzo, equinoccio de primavera, y el 21 de junio, 
+                    solsticio de verano, y en el hemisferio sur entre el 21 de septiembre y el 21 de diciembre.
+                </p>
+            </div>
+            <div><img src="imagenes/verano.png" alt="verano" width="100" height="100">
+                <p>
+                    Estación del año comprendida entre la primavera y el otoño; en el hemisferio norte, se sitúa 
+                    aproximadamente entre el 21 de junio, solsticio de verano, y el 21 de septiembre, equinoccio 
+                    de otoño, y en el hemisferio sur entre el 21 de diciembre y el 21 de marzo.
+                </p>
+            </div>
+
+            <div><img src="imagenes/otono.png" alt="otono" width="100" height="100">
+                <p>
+                    Estación del año comprendida entre el verano y el invierno; en el hemisferio norte, se sitúa
+                     aproximadamente entre el 21 de septiembre, equinoccio de otoño, y el 21 de diciembre, solsticio
+                     de invierno, y en el hemisferio sur entre el 21 de marzo y el 21 de junio.
+                </p>
+            </div>
+
+            <div><img src="imagenes/invierno.png" alt="invierno" width="100" height="100">
+                <p>
+                    Estación del año comprendida entre el otoño y la primavera; en el hemisferio norte, se sitúa 
+                    aproximadamente entre el 21 de diciembre, solsticio de invierno, y el 21 de marzo, equinoccio 
+                    de primavera, y en el hemisferio sur entre el 21 de junio y el 21 de septiembre.
+                </p>
+            </div>
+            
+
+        </div>
+        <input type = "button" onclick = "history.back()" name = "Menú" value="Menú">
+    </body>
+</html>
